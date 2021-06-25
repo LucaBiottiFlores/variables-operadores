@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Script-->
+    <script src="assets/script.js"></script>
+</head>
+<body>
+    
+    <section class="temperature_converter--cToKelvin">
+        <input id="inputCelsius" type="number" placeholder="Ingrese grados Celsius"
+        oninput="cToKelvin(this.value)" onchange="cToKelvin(this.value)">
+
+        <p>Temperatura en grados Kelvin: <span id="kelvinGrades"></span></p>
+        
+    </section>
+
+    <section>
+        <input id="inputCelsius_2" type="number" placeholder="Ingrese grados Celsius"
+        oninput="cToFahrenheit(this.value)" onchange="cToFahrenheit(this.value)">
+    
+        <p>Temperatura en grados Fahrenheit: <span id="fahrenheitGrades"></span> </p>
+    </section>
+
+    <section class="days_to_years_weeks_days">
+
+        <input id="inputDays" type="number" placeholder="Ingrese número de días"
+        oninput="daysToYears(this.value)" onchange="daysToYears(this.value)">
+
+        <p>La cantidad de años, semanas y días es: <span id="outputDays"></span> </p>
+
+    </section>
+
+    <section class="numbers">
+
+        <input id="input-numbers-1" type="number" placeholder="Ingrese n°1" oninput="funnyNumbers()" onchange="funnyNumbers()">
+        <input id="input-numbers-2" type="number" placeholder="Ingrese n°2" oninput="funnyNumbers()" onchange="funnyNumbers()">
+        <input id="input-numbers-3" type="number" placeholder="Ingrese n°3" oninput="funnyNumbers()" onchange="funnyNumbers()">
+        <input id="input-numbers-4" type="number" placeholder="Ingrese n°4" oninput="funnyNumbers()" onchange="funnyNumbers()">
+        <input id="input-numbers-5" type="number" placeholder="Ingrese n°5" oninput="funnyNumbers()" onchange="funnyNumbers()">
+
+        <p>La suma de los 5 números = <span id="numSum"></span> </p>
+        <p>El promedio de los 5 números =  <span id="numAverage"></span> </p>
+    </section>
+
+</body>
+</html>
